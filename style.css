@@ -1,0 +1,395 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    html,
+    body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(90deg, #85F6B8 0%, rgba(142, 217, 235, 0.85) 99.84%);
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ma page {
+        display: flex;
+    }
+    
+    .formulaire {
+        display: flex;
+        width: 30%;
+        height: 90%;
+        background: #FFFFFF;
+    }
+    
+    #inscription {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .form {
+        color: #555555;
+        margin-left: 5%;
+    }
+    
+    h1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        /* identical to box height */
+        text-align: center;
+        color: #555555;
+        margin-top: 16%;
+    }
+    
+    input {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        /* or 158% */
+        text-align: center;
+        color: #555555;
+        width: 90%;
+        /* margin-top: 10px; */
+        height: 50px;
+        text-align: left;
+        padding: 0 10px;
+        border: 1px solid #DDDDDD;
+    }
+    
+    label {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #555555;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    
+    .contenu {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #555555;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10%;
+        margin-top: 8%;
+    }
+    
+    .bouton {
+        background-color: #028A3D;
+        height: 59px;
+        width: 226px;
+        margin: auto;
+        border: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 10%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: none;
+    }
+    
+    #erreurname {
+        color: red;
+    }
+    
+    .errorMessage {
+        color: red;
+    }
+    /* question*/
+    
+    .question {
+        background-color: white;
+        width: 30%;
+        height: 90%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    
+    h3 {
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        color: #555555;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        /* or 158% */
+        text-align: center;
+        color: #555555;
+    }
+    
+    .notation {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        /* or 225% */
+        color: #555555;
+        padding-top: 5%;
+        margin-left: 4%;
+    }
+    
+    .quitter {
+        background-color: #EC880C;
+        width: 226px;
+        margin-left: 5%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        height: 50px;
+    }
+    
+    .deuxbtn {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .suivant {
+        width: 226px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin-left: 12%;
+        background: rgba(2, 138, 61, 0.42);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        height: 50px;
+    }
+    
+    .temps {
+        float: right;
+        margin-right: 40px;
+    }
+    
+    progress {
+        border: none;
+        width: 90%;
+        border-radius: 20px;
+        margin-left: 5%;
+    }
+    
+    progress::-webkit-progress-value {
+        background: #028A3D;
+        border-radius: 20px;
+    }
+    
+    progress::-webkit-progress-bar {
+        background: white;
+        border-radius: 20px;
+    }
+    
+    div.question {
+        display: none;
+    }
+    
+    .disappear {
+        display: none;
+    }
+    
+    .reponse {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    .reponse-question {
+        border: 2px solid #DDDDDD;
+        width: 90%;
+        height: 50px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        align-items: center;
+    }
+    
+    .reponse-question input {
+        width: 50px;
+        height: 20px;
+        padding-bottom: 5%;
+    }
+    
+    #rps1 {
+        margin-right: 5px;
+    }
+    /** resultat final*/
+    
+    .resultat {
+        background-color: white;
+        width: 571px;
+        height: 720px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        ;
+    }
+    
+    .nom {
+        margin-top: 20%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: #555555;
+    }
+    
+    .Email {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #555555;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .boutonAccuel {
+        background-color: #0880D6;
+        color: white;
+        height: 60px;
+        font-size: 20px;
+        width: 200px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+    }
+    
+    .score {
+        text-align: center;
+        font-family: 'Inter';
+        margin-top: 5%;
+        margin-bottom: 5%;
+        line-height: 24px;
+        color: #555555;
+        font-size: 20px;
+    }
+    
+    div.result-icon {
+        font-size: 150px;
+        text-align: center;
+        color: red;
+    }
+    
+    .success-color {
+        color: rgb(40, 87, 8);
+    }
+    
+    .failure-color {
+        color: red;
+    }
+    /** responsive*/
+    
+    @media screen and (max-width: 1024px) {
+        .formulaire {
+            width: 50%;
+            height: 95%;
+        }
+        .question {
+            width: 50%;
+            height: 90%;
+        }
+        .resultat {
+            width: 50%;
+            height: 95%;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .formulaire {
+            width: 80%;
+            height: 95%;
+        }
+        .question {
+            width: 80%;
+            height: 95%;
+        }
+        .resultat {
+            width: 80%;
+            height: 95%px;
+        }
+    }
+    
+    @media screen and (max-width: 450px) {
+        h1 {
+            font-size: 29px;
+            line-height: 39px;
+        }
+        .formulaire {
+            width: 95%;
+            height: 98%;
+        }
+        .contenu {
+            font-size: 17px;
+            line-height: 25px;
+            margin-bottom: 20%;
+            margin-top: 18%;
+        }
+        label {
+            font-size: 14px;
+            line-height: 19px;
+        }
+        input {
+            font-size: 15px;
+        }
+        .bouton {
+            margin-top: 25%;
+        }
+        .question {
+            width: 95%;
+            height: 90%;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        .resultat {
+            width: 95%px;
+            height: 90%;
+        }
+    }
