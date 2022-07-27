@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <div class="formulaire">
+
+        <form id="inscription" autocomplete="off" novalidate>
+
+            <h1> JavaScript Quiz</h1>
+
+            <p class="contenu"> Evaluer vos connaissances en JavaScript en répondant aux questions que nous avons spécialement sélectionnées pour vous. <br> c'est fun et c'est gratuit.</p>
+
+
+            <div class="form">
+                <label>Nom</label> <br>
+                <input type="text" id="name" placeholder="Morisho"> <br> <br>
+
+                <label> Email</label> <br>
+                <input type="email" id="email" placeholder="morishomira@gmail.com">
+
+            </div>
+
+
+            <button type="submit" class="bouton"> Commencer</button>
+        </form>
+    </div>
+    <div class="question ">
+        <form class="mira">
+            <h3 class="quest"></h3>
+
+
+            <div class="notation">
+                <span class="note"></span>
+                <span class="temps"> 60</span>
+            </div>
+
+            <div id="myProgress">
+                <!-- <div id="myBar"></div> -->
+                <progress value="60" max="60" id="progressbar"></progress>
+            </div>
+
+            <div class="reponse">
+
+                <div class="reponse-question" id="reponse-question">
+                    <input name="js" type="radio" id="rps1" class="input">
+                    <label for="rps1" id="label1"></label>
+                </div>
+                <div class="reponse-question">
+                    <input name="js" type="radio" id="rps2" class="input">
+                    <label for="rps2" id="label2"></label>
+                </div>
+                <div class="reponse-question">
+                    <input name="js" type="radio" id="rps3" class="input">
+                    <label for="rps3" id="label3"></label>
+                </div>
+                <div class="reponse-question">
+                    <input name="js" type="radio" id="rps4" class="input">
+                    <label for="rps4" id="label4"></label>
+                </div>
+
+
+            </div>
+            <div class=" deuxbtn">
+                <button class="quitter" id="boutonquitter">Quitter</button>
+                <button class="suivant" id="boutonsuivant">suivant</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    </div>
+    <div class="resultat">
+
+        <h1 class="nom"></h1>
+        <h3 class="Email"></h3>
+        <div class="result-icon"><i></i></div>
+        <!-- <img src="/check-solid.svg" class="icone"> -->
+        <h4 class="score"></h4>
+        <!-- <button type="submit" class="boutonAccuel"> Accuel</button> -->
+
+        <input type="button" class="boutonAccuel" value="Accueil">
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
